@@ -1,5 +1,7 @@
 const states = {
-  currentCategory: { categoryName: "Beverages" },
+  currentCategory: {},
+  categories: [],
+  products: [],
 };
 
 export default states;
