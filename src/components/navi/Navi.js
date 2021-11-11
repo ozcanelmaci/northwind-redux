@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import {
   Nav,
   Navbar,
@@ -14,19 +15,20 @@ export default class Navi extends Component {
     return (
       <div>
         <Navbar color="light" container expand="md" light>
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <NavbarBrand>ReactStrap</NavbarBrand>
+          <Link to="/">Ana Sayfa</Link>
           <NavbarToggler onClick={function noRefCheck() {}} />
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/components/">Components</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">
-                  GitHub
-                </NavLink>
-              </NavItem>
-              <CartSummary></CartSummary>
-            </Nav>
+          <Nav className="ml-auto" navbar>
+            <CartSummary></CartSummary>
+            <NavItem>
+              <NavLink href="/components/">Components</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="https://github.com/reactstrap/reactstrap">
+                GitHub
+              </NavLink>
+            </NavItem>
+          </Nav>
         </Navbar>
       </div>
     );

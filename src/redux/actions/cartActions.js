@@ -7,3 +7,7 @@ export function addToCart(cartItem) {
 export function removeFromCart(product) {
   return { type: actionTypes.REMOVE_FROM_CART, payload: product };
 }
+
+export function removeAllCart() {
+  return { type: actionTypes.REMOVE_ALL_CART, payload: [] };
+}
